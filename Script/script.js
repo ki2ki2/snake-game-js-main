@@ -134,7 +134,6 @@ function handleKeyPress(event) {
 }
 
 document.addEventListener('keydown', handleKeyPress);
-
 function increaseSpeed() {
     console.log(gameSpeedDelay);
   if (gameSpeedDelay > 150) {
