@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'VT323', monospace;
+}
+
+body,
+.snake {
+  background: linear-gradient(rgb(80, 212, 80), rgb(177, 177, 100));
+}
+
+#game-board {
+  height: 560px;
+  width: 560px;
+  border-radius:100px;
+  display: grid;
+  grid-template-columns: repeat(20, 28px);
+  grid-template-rows: repeat(20, 28px);
+  margin: 5px;
+}
+
+/* .game-border-1 {
+  border: #070707 solid 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 10px #40403f;
+} */
+
+/* .game-border-2 {
+  border: #87e280 solid 8px;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 10px #abb78a;
+} */
+
+.game-border-3 {
+  border: #161616 solid 10px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px #141414;
+}
+
+#instruction-text {
+  position: absolute;
+  top: 65%;
+  color: #ba1515;
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px;
+  margin: 0;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+#score {
+  color: black;
+}
+
+#score,
+#highScore {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+#highScore {
+  color: black;
+  display: none;
+}
+
+.game-border-3,
+#logo {
+  background: linear-gradient(rgb(80, 212, 80), rgb(177, 177, 100));
+}
+
+.snake {
+  /* border: #111010 1px dotted; */
+  background: linear-gradient(rgb(205, 120, 201), rgb(81, 41, 41));
+    border: .4vmin solid rgb(25, 19, 19);
+    border-radius: 2px;
+}
+
+.food {
+  background: linear-gradient(red, purple);
+    border: .4vmin solid black;
+    border-radius: 2px;
+  /* background-color: #dedede;
+  border: #999 5px solid; */
+}
+
+#logo {
+  position: absolute;
+}
